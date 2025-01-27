@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: spring-crud
+    env: docker
+    buildCommand: docker build -t spring-crud .
+    startCommand: docker run -p $PORT:8081 spring-crud 
