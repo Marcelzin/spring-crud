@@ -2,13 +2,13 @@
 
 [![Status do Projeto](https://img.shields.io/badge/status-MVP-blue)]()  
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.2.3-green)]()  
-[![Render](https://img.shields.io/badge/Live%20Demo-Render-orange)](https://spring-crud-88u1.onrender.com/)
+[![Render](https://img.shields.io/badge/Live%20Demo-Render-orange)](https://spring-crud-2pnd.onrender.com)
 
 ## 🌟 Visão Geral
 Este projeto é um **MVP simples** desenvolvido com o objetivo de demonstrar conhecimentos técnicos em **Java**, **Spring Boot** e tecnologias relacionadas.  
 A aplicação é uma ToDo List funcional, permitindo criar, visualizar, editar e excluir tarefas (CRUD completo).  
 
-**🔗 Acesse a aplicação online:** [Sistema de Gerenciamento de Tarefas](https://spring-crud-88u1.onrender.com/)
+**🔗 Acesse a aplicação online:** [Sistema de Gerenciamento de Tarefas](https://spring-crud-2pnd.onrender.com)
 
 ---
 
