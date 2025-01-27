@@ -1,12 +1,16 @@
 # Estágio de build
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+FROM ubuntu:latest AS build
+
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk -y
+RUN apt-get install maven -y
+
 WORKDIR /build
-COPY pom.xml .
-COPY src ./src
-RUN mvn clean package -DskipTests
+COPY . .
+RUN mvn clean install -DskipTests
 
 # Estágio de produção
-FROM eclipse-temurin:17-jre-focal
+FROM openjdk:17-jdk-slim
 WORKDIR /app
 COPY --from=build /build/target/*.jar app.jar
 ENV PORT=8081
