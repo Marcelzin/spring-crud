@@ -16,7 +16,7 @@ public class TodoController {
     private TodoRepository todoRepository;
 
     // Tela de lista de tarefas
-    @GetMapping("/todos")
+    @GetMapping("")
     public String listarTodos(Model model) {
         List<Todo> todos = todoRepository.findAll();
         model.addAttribute("todos", todos);
